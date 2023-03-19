@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hellow </p>
+    <p> Probability and Statistics are the foundational pillars of Data Science. In fact, the underlying principle of machine learning and artificial intelligence is nothing but statistical mathematics and linear algebra. Often you will encounter situations, especially in Data Science, where you have to read some research paper which involves a lot of maths in order to understand a particular topic and so if you want to get better at Data Science, it's imperative to have a strong mathematical understanding. This tutorial is about commonly used probability distributions in machine learning literature. If you are a beginner, then this is the right place for you to get started. In this tutorial, you'll:
+
+        Learn about probability jargons like random variables, density curve, probability functions, etc.
+        Learn about different probability distributions and their distribution functions along with some of their properties.
+        Learn to create and plot these distributions in python.
+        Before getting started, you should be familiar with some mathematical terminologies which is what the next section covers.
+        
+        Random Variable
+        A random variable is a variable whose possible values are numerical outcomes of a random phenomenon. There are two types of random variables, discrete and continuous.
+        
+        A discrete random variable is one which may take on only a countable number of distinct values and thus can be quantified. For example, you can define a random variable $X$ to be the number which comes up when you roll a fair dice. $X$ can take values : $[1,2,3,4,5,6]$ and therefore is a discrete random variable.
+        
+        The probability distribution of a discrete random variable is a list of probabilities associated with each of its possible values. It is also sometimes called the probability function or the probability mass function. To have a mathematical sense, suppose a random variable $X$ may take $k$ different values, with the probability that $X = x_{i}$ defined to be $P(X = x_{i}) = p_{i}$. Then the probabilities $p_{i}$ must satisfy the following:
+        
+        1: 0 < $p_{i}$ < 1 for each $i$
+        
+        2: $p_{1} + p_{2} + ... + p_{k} = 1$.
+        
+        Some examples of discrete probability distributions are Bernoulli distribution, Binomial distribution, Poisson distribution etc.
+        
+        A continuous random variable is one which takes an infinite number of possible values. For example, you can define a random variable $X$ to be the height of students in a class. Since the continuous random variable is defined over an interval of values, it is represented by the area under a curve (or the integral).
+        
+        The probability distribution of a continuous random variable, known as probability distribution functions, are the functions that take on continuous values. The probability of observing any single value is equal to $0$ since the number of values which may be assumed by the random variable is infinite. For example, a random variable $X$ may take all values over an interval of real numbers. Then the probability that $X$ is in the set of outcomes $A, P(A)$, is defined to be the area above $A$ and under a curve. The curve, which represents a function $p(x)$, must satisfy the following:
+        
+        1: The curve has no negative values $(p(x) > 0$ for all $x$)
+        
+        2: The total area under the curve is equal to $1$.
+        
+        A curve meeting these requirements is often known as a density curve. Some examples of continuous probability distributions are normal distribution, exponential distribution, beta distribution, etc.
+        
+        There’s another type of distribution that often pops up in literature which you should know about called cumulative distribution function. All random variables (discrete and continuous) have a cumulative distribution function. It is a function giving the probability that the random variable $X$ is less than or equal to $x$, for every value $x$. For a discrete random variable, the cumulative distribution function is found by summing up the probabilities.
+        
+        In the next section, you will explore some important distributions and try to work them out in python but before that import all the necessary libraries that you'll use.
+        
+        # for inline plots in jupyter</p>
+</body>
+</html>
